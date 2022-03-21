@@ -17,6 +17,6 @@
 
   <img src="https://imgur.com/m8TVLvA.png" />
   
-   * Aqui nós estamos então definindo algumas coisinhas muito interessante sobre o nosso módulo. Após a montagem do nosso módulo, nós podemos conferir as seguintes informações utilizando <code>modinfo file.ko</code>
+   * Aqui nós estamos então definindo algumas informações muito importantes para o nosso módulo e é sempre recomendável que a cada criação de um novo módulo, você deixe algumas descrições sobre o módulo. Após a montagem do nosso módulo, nós podemos conferir as seguintes informações utilizando <code>modinfo file.ko</code>
    
    <img src="https://imgur.com/aHYfTn5.png">
