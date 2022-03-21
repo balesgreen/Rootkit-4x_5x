@@ -31,4 +31,6 @@
   <br>
   <img src="https://imgur.com/s3JwRqH.png" />
   
-  * Aquui nós entramos na parte principal do nosso código e é aqui que o nosso RootKit funcionará.
+  * Aqui nós entramos na parte principal do nosso código e é aqui que o nosso RootKit funcionará. Vamos detalhar a nossa estrutura para entendermos mais como funciona o nosso RootKit.
+
+  <code>Bom, podemos notar que existe duas funções quase identicas que são separadas por dois pré-processadores "if/else". Após verificar a versão e arquitetura do kernel, PTREGS_SYSCALL_STUBS pode ou não ser definido. Se for, então definimos o ponteiro "orig_mkdir" da função e a declaração "hook_mkdir" da função para usar a estrutura "pt_regs". </code>
