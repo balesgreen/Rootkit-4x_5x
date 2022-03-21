@@ -34,3 +34,17 @@
   * Aqui nós entramos na parte principal do nosso código e é aqui que o nosso RootKit funcionará. Vamos detalhar a nossa estrutura para entendermos mais como funciona o nosso RootKit.
 
   <code>Bom, podemos notar que existe duas funções quase identicas que são separadas por dois pré-processadores "if/else". Após verificar a versão e arquitetura do kernel, PTREGS_SYSCALL_STUBS pode ou não ser definido. Se for, então definimos o ponteiro "orig_mkdir" da função e a declaração "hook_mkdir" da função para usar a estrutura "pt_regs". </code>
+  
+  <img src="https://imgur.com/yeKqK8Y.png" />
+  
+  ```c
+  static struct ftrace_hook hook[] = {
+    HOOK("sys_mkdir", hook_mkdir, &orig_mkdir),
+};
+  ```
+  
+  Como diz o nosso amigo Xcellerator: <code>A macro HOOK requer o nome da syscall ou função do kernel que estamos direcionando (sys_mkdir), a função de hook que escrevemos (hook_mkdir) e o endereço de onde queremos que a syscall original seja salva (orig_mkdir). Observe que hook[] pode conter mais do que apenas um único hook de função para rootkits mais complicados!
+
+Uma vez que esta matriz é configurada, usamos fh_install_hooks() para instalar os hooks de função e fh_remove_hooks() para removê-los. Tudo o que temos a fazer é colocá-los nas funções init e exit respectivamente e fazer uma pequena verificação de erros:</code>
+  
+  * 
