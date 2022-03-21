@@ -44,10 +44,12 @@
   ```
   
   Como diz o nosso amigo Xcellerator: <code>A macro HOOK requer o nome da syscall ou função do kernel que estamos direcionando (sys_mkdir), a função de hook que escrevemos (hook_mkdir) e o endereço de onde queremos que a syscall original seja salva (orig_mkdir). Observe que hook[] pode conter mais do que apenas um único hook de função para rootkits mais complicados!
-
 Uma vez que esta matriz é configurada, usamos fh_install_hooks() para instalar os hooks de função e fh_remove_hooks() para removê-los. Tudo o que temos a fazer é colocá-los nas funções init e exit respectivamente e fazer uma pequena verificação de erros.</code>
   
   * Basicamente o que nos resta agora é carregar o módulo que foi escrito na função <code>rootkit_init</code> e caso a gente queira descarrega-lo, a função que será executada é a <code>rootkit_exit</code>
   
   
  
+<br><br><br>
+
+Todos os créditos de ensino são direcionados ao @Xcellerator!
