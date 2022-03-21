@@ -25,4 +25,10 @@
    
    <img src="https://imgur.com/Udh4jqH.png" />
    
-  * Nessa parte do código, estou definindo a versão do Kernel que será utilizada para que nossa proeza possa ser concluída com sucesso.
+  * Nessa parte do código, estou definindo a versão do Kernel e Arquitetura (x86_64) que será utilizada para que nossa proeza possa ser concluída com sucesso.
+ 
+  <img src="https://imgur.com/aEjZdZu.png" />
+  <br>
+  <img src="https://imgur.com/s3JwRqH.png" />
+  
+  * Aquui nós entramos na parte principal do nosso código e é aqui que o nosso RootKit funcionará.
