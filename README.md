@@ -21,8 +21,8 @@
    
    <img src="https://imgur.com/aHYfTn5.png">
    
-   <h3></h3>
+   <h3>-------------</h3>
    
-   <img src="https://imgur.com/Udh4jqH" />
+   <img src="https://imgur.com/Udh4jqH.png" />
    
   * Nessa parte do código, estou definindo a versão do Kernel que será utilizada para que nossa proeza possa ser concluída com sucesso.
