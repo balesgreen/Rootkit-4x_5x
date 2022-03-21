@@ -20,3 +20,9 @@
    * Aqui nós estamos então definindo algumas informações muito importantes para o nosso módulo e é sempre recomendável que a cada criação de um novo módulo, você deixe algumas descrições sobre o módulo. Após a montagem do nosso módulo, nós podemos conferir as seguintes informações utilizando <code>modinfo file.ko</code>
    
    <img src="https://imgur.com/aHYfTn5.png">
+   
+   <h3></h3>
+   
+   <img src="https://imgur.com/Udh4jqH" />
+   
+  * Nessa parte do código, estou definindo a versão do Kernel que será utilizada para que nossa proeza possa ser concluída com sucesso.
