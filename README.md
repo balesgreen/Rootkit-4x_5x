@@ -14,3 +14,9 @@
     * kernel.h: Essa biblioteca é a parte principal do nosso código, pois é com ela que teremos possibilidade de mexer com o kernel do nosso sistema.
     * syscall.h: Essa biblioteca é bem pequena e com ela nós conseguimos invocar chamadas no sistema.
     * module.h: Essa biblioteca é a parte do nosso código onde interfere na criação do módulo do kernel, pois um Rootkit é apenas um módulo que será carregado no Kernel.
+
+  <img src="https://imgur.com/m8TVLvA.png" />
+  
+   * Aqui nós estamos então definindo algumas coisinhas muito interessante sobre o nosso módulo. Após a montagem do nosso módulo, nós podemos conferir as seguintes informações utilizando <code>modinfo file.ko</code>
+   
+   <img src="https://imgur.com/aHYfTn5.png">
